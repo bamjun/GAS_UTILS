@@ -13,14 +13,14 @@ add library by id
 
 ## 2. edit message by google docs
 
-- Clear all content in Google Docs and input message
+- Clear all content and Add text in Google Docs.
 
 ```javascript
     const docs = GAS_UTILS.GoogleDocs('google docs id')
     docs.clearAddText("TEXT")
 ```
 
-- Add text to the end of Google Docs while keeping existing content
+- Add text to the end of Google Docs while keeping existing content.
 
 ```javascript
     const docs = GAS_UTILS.GoogleDocs('google docs id')
