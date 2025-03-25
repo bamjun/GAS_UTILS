@@ -22,6 +22,23 @@ class GoogleDocs {
 
   }
 
+  getSheetTitleFromUrl(url) {
+    try {
+      const matches = url.match(/\/d\/([a-zA-Z0-9-_]+)/);
+      if (!matches || matches.length < 2) {
+        throw new Error('올바른 스프레드시트 URL이 아닙니다.');
+      }
+  
+      const docSheetId = matches[1];
+      const file = DriveApp.getFileById(docSheetId);
+      
+      return file.getName(); // 스프레드시트의 제목 반환
+    } catch (e) {
+      Logger.log('오류: ' + e.message);
+      return null;
+    }
+  }
+
 }
 
 
