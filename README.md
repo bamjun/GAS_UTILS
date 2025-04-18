@@ -2,7 +2,7 @@
 ## Table of Contents
 
 - [Add Library by ID](#add-library-by-id)
-- [Features](#features)
+- Features
   - [1. Send Message by Discord Webhook](#1-send-message-by-discord-web-hook)
   - [2. Edit Message in Google Docs](#2-edit-message-by-google-docs)
 
