@@ -8,19 +8,26 @@ add library by id
 
 ## 1. send message by discord web hook
 ```javascript
-    const dico = GAS_UTILS.DiscordNotifier('discord web hook address')
+    const dico = new GAS_UTILS.DiscordNotifier('discord web hook address')
     dico.sendText('message')
 
 ```
+![alt text](images/markdown-image-1.png)
+![alt text](images/markdown-image-2.png)
+![alt text](images/markdown-image-3.png)
+![alt text](images/markdown-image-4.png)
+![alt text](images/markdown-image-5.png)
+
 
 ## 2. edit message by google docs
 
 - Clear all content and Add text in Google Docs.
 
 ```javascript
-    const docs = GAS_UTILS.GoogleDocs('google docs id')
+    const docs = new GAS_UTILS.GoogleDocs('google docs id')
     docs.clearAddText("TEXT")
 ```
+
 
 - Add text to the end of Google Docs while keeping existing content.
 
@@ -28,3 +35,7 @@ add library by id
     const docs = GAS_UTILS.GoogleDocs('google docs id')
     docs.addText("TEXT")
 ```
+
+![alt text](images/markdown-image-6.png)
+![alt text](images/markdown-image-7.png)
+![alt text](images/markdown-image-8.png)
